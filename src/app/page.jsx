@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const HomePage = () => {
   return <div className={styles.container}>
-    
+
       <div className={styles.textContainer}>
             <h1 className={styles.title}> Creative Thoughts Agency. </h1>
             <p className={styles.description}> Publish your passions your way. Whether you'd like to share your knowledge, experiences or the latest news, create a unique and beautiful blog. </p>

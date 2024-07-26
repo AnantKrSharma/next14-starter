@@ -40,14 +40,21 @@
     justify-content: center;
 }
 
+
 .form button{
+    cursor: pointer;
     padding: 15px;
-    background-color: blue;
+    background-color: rgb(56, 56, 255);
     color: var(--text);
     font-size: large;
     border: none;
     border-radius: 10px;
     width: 50%;
+    transition: all 0.1s;
+}
+
+.form button:hover{
+    background-color: rgb(32, 32, 132);
 }
 
 @media (max-width:768px){
@@ -55,3 +62,4 @@
         flex-direction: column;
     }
 }
+
