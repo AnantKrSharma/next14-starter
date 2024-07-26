@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title{
+    font-size: 96px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    padding: 20px;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.08s;
+}
+
+.button:first-child{
+    background-color: rgb(56, 56, 254);
+}
+
+.button:first-child:hover{
+    background-color: rgb(49, 27, 158);
+    transform: scale(1.03);
+}
+
+.button:nth-child(2){
+    background-color: rgb(92, 92, 92);
+}
+
+.button:nth-child(2):hover{
+    background-color: rgb(49, 49, 49);
+    transform: scale(1.03);
+}
+
+.brandImgContainer{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    filter: grayscale(1);
+}
+
+.brandImg{
+    object-fit: contain;
+}
+
+.heroImgContainer{
+    flex: 1;
+    position: relative;
+}
+
+.heroImg{
+    object-fit: contain;
+}
+
+@media (max-width: 1024px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .textContainer{
+        align-items: center;
+    }
+
+    .buttonContainer{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    
+    .title{
+        font-size: 64px;
+    }
+    
+    .brandImgContainer{
+        width: 100%;
+    }
+}

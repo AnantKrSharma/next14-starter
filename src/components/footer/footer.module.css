@@ -1,0 +1,23 @@
+.container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(160, 160, 160);
+}
+
+.logo{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 12px;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
