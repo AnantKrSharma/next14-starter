@@ -1,15 +1,21 @@
 import styles from './contact.module.css'
 import Image from 'next/image'
+// import { useEffect, useState } from 'react'
 // import dynamic from 'next/dynamic'
 // const HydrationTestNoSSR = dynamic(() => import('@/components/HydrationTest.jsx'), { ssr: false })
 
 const ContactPage = () => {
   // const a = Math.random();
+  // const [rendered, setRendered] = useState(false);
+  // useEffect(() => {
+  //   setRendered(true);
+  // }, [])
 
   return (
     <div className={styles.container}>
       {/* <HydrationTestNoSSR /> */}
       {/* <div suppressHydrationWarning>{a}</div> */}
+      {/* {setRendered && a} */}
 
       <div className={styles.imageContainer}>
           <Image src='/contact.png' fill className={styles.contactImage} alt=''/>
