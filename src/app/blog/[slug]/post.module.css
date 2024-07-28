@@ -9,25 +9,24 @@
 .imgContainer{
     flex: 1;
     position: relative;
-    height: 90%;
+    height: 70vh;
     width: 500px;
-    border: 1px solid white;
 }
 
 .img{
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .textContainer{
     flex: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 3.5rem;
 }
 
 .title{
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .detail{
@@ -57,10 +56,18 @@
 }
 
 .content{
-    text-align: center;
     font-size: 1rem;
 }
 
+@media (max-width: 1024px){
+    .container{
+        text-align: center;
+    }
+
+    .textContainer{
+        align-items: center;
+    }
+}
 @media (max-width: 768px){
     .container{
         display: flex;
